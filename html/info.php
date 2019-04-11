@@ -1,0 +1,10 @@
+<html>
+<title>Info
+</title>
+<body>
+<p>Test</p>
+<?php
+phpinfo();
+?>
+</body>
+</html>
