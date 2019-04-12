@@ -6,6 +6,7 @@
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sticky_footer.css">
   
   <title>Demo technologies</title>
   
@@ -16,25 +17,48 @@
  </head>
 
  <body>
-	<div class="row">
-	  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<h1>Logo</h1>
+  <!-- шапка -->
+  <header class="container-fluid text-center bg-light mb-n3">
+   <h1>Demo Technologies</h1>
+   <p>Examples of web pages!</p> 
+  </header>
+  <!-- блок навигации -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+   <div class="row container-fluid vw-100">
+    <div class="col-md-6 col-lg-9">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+		</div>  
+    </div>
+	<div class="col-md-6 col-lg-3 pr-0">
+	 <form class="form-inline mt-1 mt-md-0">
+	  <div class="input-group-sm">
+       <input class="form-control mr-md-1" type="text" placeholder="Login" aria-label="Login" style="width: 120px;">
+	   <input class="form-control mr-md-1" type="password" placeholder="Password" aria-label="Password" style="width: 120px;">
+       <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Sign In</button>
 	  </div>
-	</div>
+     </form>
+    </div>
+   </div>
+  </nav>
+  <!-- основная часть -->
+  <div id='home' class="container-fluid">
 	<div class="row">
 	  <div class="col-md-3 col-lg-2">
-		<nav>Header nav</nav>
-	  </div>
-	  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
-		<h2>Header</h2>
-	  </div>
-	  <div class="col-md-9 col-lg-2">
-		<nav>Aside head nav</nav>
-	  </div>
-	</div>
-	<div class="row">
-	  <div class="col-md-3 col-lg-2">
-		<nav>Main nav</nav>
+		<nav>Home nav</nav>
 	  </div>
 	  <div class="col-xs-12 col-md-9 col-lg-8">
 		<p>Welcome!</p>
@@ -43,12 +67,24 @@
 		<nav>Aside main nav</nav>
 	  </div>
 	</div>
+  </div>
+  <div id='link' class="container-fluid">
 	<div class="row">
-	  <div class="col-xs-12">
-		<div class="container-fluid">2019 &copy; Alex Novikov</div>
+	  <div class="col-12">
+		<p>Links:</p>
+		<ul>
+		 <li><a href="bootstrap.html">Bootstrap examples</a></li>
+		 <li><a href="php/examples/index.html">Use php with Ajax</a></li>
+		</ul>
 	  </div>
 	</div>
-
+  </div>
+  <!-- нижняя часть -->
+  <footer class="footer">
+   <div class="container-fluid bg-light text-right">
+    <span class="text-muted">2019 &copy; Alex Novikov</span>
+   </div>
+  </footer>
  </body>
 
 </html>
