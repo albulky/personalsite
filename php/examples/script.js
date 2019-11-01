@@ -19,9 +19,8 @@ $(document).ready(function(){
 		 console.log('done');
 		 console.dir(data);
 		 $('#ajax_loader').html('<p style="color: green; margin: 0; padding: 0;">'+
-		                         'Время задержки: ' + data.sleep + ' (сек). Click me again,'+
-								 ' ' + data.ru
-								'</p>');
+		                         'Время задержки: ' + data.sleep + ' (сек).' +
+								 ' Click me again, '+ data.ru +	'</p>');
       });	
 	 console.log('Finish');
     });
